@@ -16,9 +16,14 @@ class Vampire {
   }
 
   drink() {
-    this.thirsty = false;
+    return this.thirsty = false;
   }
 
 };
 
 module.exports = Vampire;
+
+// Walked through during class with MOD 2
+// class Vampire {
+//   constructor(name, e)
+// }
