@@ -14,9 +14,11 @@ class Hobbit {
  }
  celebrateBirthday () {
    this.age++;
+   console.log(this.age);
    if (this.age > 32) {
      this.adult = true;
-   } if (this.age > 100) {
+   }
+   if (this.age > 100) {
      this.old = true;
     }
   }
@@ -25,6 +27,7 @@ class Hobbit {
 module.exports = Hobbit;
 
 // disposition could be made more dynamic by = disposition || 'homebody'
+// yes but disposition would have to be declared as a parameter
 
 // want to walk through "should have gained 1 year after every birthday"
 // with someone - i'm not clear on the function timeTravel that is in the test
